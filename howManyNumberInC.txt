@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  printf("Enter number : ");
+  int m;
+  scanf_s("%d", &m);
+  int m50, m20, m10, m5, m1;
+  m50 = m / 50;
+  printf("50 : %d\n", m50);
+  m20 = (m % 50 )/ 20;
+  printf("20 : %d\n", m20);
+  m10 = ((m % 50) % 20) / 10;
+  printf("10 : %d\n", m10);
+  m5 = (((m % 50) % 20) % 10) / 5;
+  printf("5 : %d\n", m5);
+  m1 = ((((m % 50) % 20) % 10) % 5) / 1;
+  printf("1 : %d", m1);
+
+
+}

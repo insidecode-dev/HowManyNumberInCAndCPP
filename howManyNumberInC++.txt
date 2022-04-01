@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int m;
+    cout << "Enter number : ";
+    cin >> m;
+    
+    int m50 = m /50;
+    cout << "50 : " << m50 << endl;
+    int m20 = (m%50)/20;
+    cout << "20 : " << m20 << endl;
+    int m10 = ((m%50)%20)/10;
+    cout << "10 : " << m10 << endl;
+    int m5 = (((m%50)%20)%10)/5;
+    cout << "5 : " << m5 << endl;
+    int m1 = ((((m%50)%20)%10)%5)/1;
+    cout << "1 : " << m1 << endl;
+    return 0;
+}
